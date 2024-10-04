@@ -127,11 +127,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const newClassification = prompt("Enter new classification:", dataToUpdate.classification);
         const newDisability = prompt("Enter new disability:", dataToUpdate.disability);
         const newCauseOfDisability = prompt("Enter new cause of disability:", dataToUpdate.causeOfDisability);
-        const newNcae = prompt("Enter new NCAE:", dataToUpdate.ncae);
-        const newWhere = prompt("Enter new where:", dataToUpdate.where);
-        const newWhen = prompt("Enter new when:", dataToUpdate.when);
+        const newNcae = prompt("Have You Taken NCAE? Y/N:", dataToUpdate.ncae);
+        const newWhere = prompt("If Y, Where:", dataToUpdate.where);
+        const newWhen = prompt("If Y, When:", dataToUpdate.when);
         const newCourse = prompt("Enter new course:", dataToUpdate.course);
-        const newScholar = prompt("Enter new scholar:", dataToUpdate.scholar);
+        const newScholar = prompt("Enter new Scholarship Package:", dataToUpdate.scholar);
 
         // Update the data with new values only if the user provided them
         existingData[index] = {

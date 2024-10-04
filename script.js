@@ -62,15 +62,15 @@ document.addEventListener("DOMContentLoaded", function () {
         existingData.forEach((data, index) => {
             const row = document.createElement("tr");
             row.innerHTML = `
-                <td class="text-white px-6 py-3">${data.firstName}</td>
-                <td class="text-white px-6 py-3">${data.lastName}</td>
-                <td class="text-white px-6 py-3">${data.street}</td>
-                <td class="text-white px-6 py-3">${data.barangay}</td>
-                <td class="text-white px-6 py-3">${data.email}</td>
-                <td class="text-white px-6 py-3">${data.contact}</td>
+                <td class="text-white px-6 py-3 font-medium">${data.firstName}</td>
+                <td class="text-white px-6 py-3 font-medium">${data.lastName}</td>
+                <td class="text-white px-6 py-3 font-medium">${data.street}</td>
+                <td class="text-white px-6 py-3 font-medium">${data.barangay}</td>
+                <td class="text-white px-6 py-3 font-medium">${data.email}</td>
+                <td class="text-white px-6 py-3 font-medium">${data.contact}</td>
                 <td>
-                    <button class="btn btn-primary btn-sm text-white" onclick="updateData(${index})">Update</button>
-                    <button class="btn btn-danger btn-sm text-white" onclick="deleteData(${index})">Delete</button>
+                    <button class="font-medium text-blue-600  hover:underline mx-2" onclick="updateData(${index})">Update</button>
+                    <button class="font-medium text-red-500 hover:underline mx-2" onclick="deleteData(${index})">Delete</button>
                 </td>
             `;
             dataTableBody.appendChild(row);
